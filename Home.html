@@ -48,12 +48,12 @@
 </ul>
 
 <div class="language">
-
-<select id="languageSelect" onchange="changeLanguage()">
-    <option value="english">English</option>
-    <option value="gujarati">ગુજરાતી</option>
-    <option value="hindi">हिन्दी</option>
+<select>
+    <option>English</option>
+    <option>ગુજરાતી</option>
+    <option>हिन्दी</option>
 </select>
+
 
 </div>
 
@@ -148,27 +148,7 @@ if(user){
     document.getElementById("welcomeUser").innerHTML = "🙏 Welcome, " + user;
 }
 </script>
-<script>
 
-function changeLanguage(){
-
-let lang = document.getElementById("languageSelect").value;
-
-if(lang=="gujarati"){
-    alert("ગુજરાતી ભાષા પસંદ કરી");
-}
-
-else if(lang=="hindi"){
-    alert("हिन्दी भाषा चुनी गई");
-}
-
-else{
-    alert("English language selected");
-}
-
-}
-
-</script>
 
 </body>
 </html>
