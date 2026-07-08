@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puja Path - Welcome</title>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="login-box">
+            <img
+    src="https://c.saavncdn.com/707/Jai-Ambe-Gujarati-2019-20190919184351-500x500.jpg"
+    alt="Jai Ambe Logo"
+    class="logo"
+>
+
+
+            <h1>Jai Ambe Jyotish</h1>
+
+            <h2>Welcome</h2>
+
+            <p>Enter your details to continue</p>
+
+            <form id="loginForm" onsubmit="saveUser(event)">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                >
+
+                <label>Mobile Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your mobile number"
+                    maxlength="10"
+                >
+
+                <button type="button" onclick="saveUser()">Continue</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+<script>
+function saveUser() {
+
+    let name = document.getElementById("name").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+
+    if (name === "" || phone === "") {
+        alert("Please fill all details");
+        return;
+    }
+
+    localStorage.setItem("userName", name);
+    localStorage.setItem("userPhone", phone);
+
+    
+
+    location.replace("./Home.html");
+}
+</script>
+
+</body>
+</html>

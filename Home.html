@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Ambe Pooja Seva</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 id="welcomeUser"></h2>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+ <img
+    src="https://c.saavncdn.com/707/Jai-Ambe-Gujarati-2019-20190919184351-500x500.jpg"
+    alt="Jai Ambe Logo"
+    class="logo"
+>
+
+<div>
+
+<h2>Jai Ambe</h2>
+
+<p>Pooja Seva</p>
+
+</div>
+
+</div>
+
+<ul>
+
+<li><a class="active" href="Home.html">Home</a></li>
+<li><a href="services.html">Puja Services</a></li>
+<li><a href="astrology.html">Astrology</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="language">
+
+<select>
+
+<option>English</option>
+
+<option>ગુજરાતી</option>
+
+<option>हिन्दी</option>
+
+</select>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="left">
+
+<h4>🙏 Welcome To</h4>
+
+<h1>JAI AMBE POOJA SEVA</h1>
+
+<p>
+
+Vedic Pooja • Astrology • All Religious Rituals
+
+</p>
+
+<p>
+
+Pandit <strong>Devendra Maharaj Shastri (B.Com)</strong>
+
+<br>
+
+25+ Years Experience
+
+</p>
+
+<a href="services.html" class="btn">
+
+View Services
+
+</a>
+
+</div>
+
+<div class="right">
+
+<img src="devendra.jpg.png" alt="Pandit Devendra">
+
+</div> 
+
+</section>
+
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why">
+
+<h2>Why Choose Us?</h2>
+
+<div class="why-box">
+
+<div>
+
+<h3>🙏 25+ Years Experience</h3>
+
+<p>Experienced in all Vedic rituals and religious ceremonies.</p>
+
+</div>
+
+<div>
+
+<h3>📿 Authentic Vedic Method</h3>
+
+<p>Every ritual is performed according to traditional Vedic scriptures.</p>
+
+</div>
+
+<div>
+
+<h3>🏠 Home Visit Available</h3>
+
+<p>Pooja services are available at your home with proper guidance.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+let user = localStorage.getItem("userName");
+
+if(user){
+    document.getElementById("welcomeUser").innerHTML = "🙏 Welcome, " + user;
+}
+</script>
+
+</body>
+</html>
